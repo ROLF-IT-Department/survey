@@ -1,0 +1,87 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Система опроса</title>
+    <link type="text/css" href="MastePage.css" rel="Stylesheet" />
+    <script type="text/javascript" src="JS/main.js"></script>
+    <script type="text/javascript">
+        function endSurvey()
+        {
+            var answer = confirm("Вы уверены что хотите завершить опрос?\r\nПосле завершения опрос станет не доступным!");
+            if (answer) window.location = "End.aspx?end=1";  
+           
+        }     
+       
+    </script>
+    
+</head>
+<body>
+
+ <form id="form1" runat="server">
+<table cellpadding="0" cellspacing="0" width="100%" height="100%"><tr><td valign="middle" align="center"> 
+
+
+<table class="main_table" cellpadding="0" cellspacing="0"  width="1250px" Height="880px"  >  <!-- width="1295px" style="height: 880px"-->
+<tr><td valign="top">
+   
+   <center>
+    <table  cellpadding="0" cellspacing="0" border="0" width="90%" >
+        <tr>
+            <td><span class="title"><br /> Что я думаю о компании <span class="rolf">РОЛЬФ</span></span></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="middle" width="880px" style="height: 700px">
+               
+                    <div class="ContentPlaceHolderCSS">
+                        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server"></asp:contentplaceholder>
+                    </div>
+                
+            </td>
+            <td>
+                 <table cellpadding="0" cellspacing="0" border="0" width="100%" style="height: 100%; margin-left: 10px;" >
+                    <tr>
+                        <td><img alt="" src="App_Resources/pic1.bmp" style="border: 1px solid black" /></td>
+                    </tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr> 
+                        <td><img alt="" src="App_Resources/pic2.bmp" style="border: 1px solid black" /></td>
+                    </tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr> 
+                        <td><img alt="" src="App_Resources/pic4.bmp" style="border: 1px solid black" /></td>
+                    </tr>
+                 </table>
+            </td>
+        </tr>
+        <tr>
+            <td width="880px">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" >
+                    <tr>
+                        <td><a href="About.aspx"><img alt="" class="button" border="0" src="App_Resources/info_button.jpg" onmouseover="src='App_Resources/info_button_yellow.jpg'" onmouseout="src='App_Resources/info_button.jpg'" /></a></td>
+                        <td><a href="Rules.aspx"><img alt="" class="button" border="0" src="App_Resources/rules_button.jpg" onmouseover="src='App_Resources/rules_button_yellow.jpg'" onmouseout="src='App_Resources/rules_button.jpg'" id="IMG1" onclick="return IMG1_onclick()" /></a></td>
+                        <td><asp:LinkButton ID="Back" runat="server" OnClick="Back_Click"><img alt="" class="button" border="0" src="App_Resources/back_button.jpg" onmouseover="src='App_Resources/back_button_yellow.jpg'" onmouseout="src='App_Resources/back_button.jpg'" /></asp:LinkButton></td>
+                        <td><asp:LinkButton ID="Forward" runat="server" OnClick="Forward_Click"><img alt="" class="button" border="0" src="App_Resources/forward_button.jpg" onmouseover="src='App_Resources/forward_button_yellow.jpg'" onmouseout="src='App_Resources/forward_button.jpg'" /></asp:LinkButton></td>
+                        <td><a href="List.aspx"><img alt="" class="button" border="0" src="App_Resources/list_razd.jpg" onmouseover="src='App_Resources/list_razd_yellow.jpg'" onmouseout="src='App_Resources/list_razd.jpg'" /></a></td>
+                        <td><img alt="" onclick="endSurvey()" class="button" border="0" src="App_Resources/end_button.jpg" onmouseover="src='App_Resources/end_button_yellow.jpg'" onmouseout="src='App_Resources/end_button.jpg'" /></td>
+                    </tr>
+                </table>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+     </center>   
+
+</td></tr>
+</table>
+
+
+</td></tr></table> 
+
+    </form>
+</body>
+</html>

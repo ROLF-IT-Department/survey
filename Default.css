@@ -1,0 +1,103 @@
+﻿html,body{
+height:100%;
+margin:0px;
+padding:0px
+}
+
+body
+{
+	margin: 0px; 
+	padding: 0px; 
+	background-color: #5E5E5E;	
+ 
+
+}
+
+.background
+{
+	position:absolute; 
+	top: 0px; 
+	left: 0px; 
+	
+}
+
+.main_table
+{
+		background: url('App_Resources/login.jpg') no-repeat;
+		background-position: center center;
+		
+}
+
+.main_div
+{
+	width: 300px;
+	height: 200px;
+	position: absolute;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+.col_size
+{
+	height: 40px;	
+}
+
+.tb_size
+{
+	width: 150px;
+}
+
+.text
+{
+	font-family: 'Trebuchet MS', 'Times New Roman';
+	color: #000000;
+	font-size: 12pt;	
+	font-weight:bold;
+}
+
+#submit
+{
+	font-family: 'Trebuchet MS' , 'Times New Roman';
+	color: #000000;
+	font-size: 12pt;
+	font-weight: bold;
+	background-color: #dcdcdc;
+	border-right: silver 2px groove;
+	border-top: silver 2px groove;
+	border-left: silver 2px groove;
+	border-bottom: silver 2px groove;
+}
+
+#login
+{
+	font-family: 'Trebuchet MS' , 'Times New Roman';
+	color: #000000;
+	font-size: 12pt;
+	font-weight: bold;
+	background-color: #f5f5f5;
+	border-right: silver 2px groove;
+	border-top: silver 2px groove;
+	border-left: silver 2px groove;
+	border-bottom: silver 2px groove;
+}
+
+#password
+{
+	font-family: 'Trebuchet MS' , 'Times New Roman';
+	color: #000000;
+	font-size: 12pt;
+	font-weight: bold;
+	background-color: #f5f5f5;
+	border-right: silver 2px groove;
+	border-top: silver 2px groove;
+	border-left: silver 2px groove;
+	border-bottom: silver 2px groove;
+}
+
+.warning
+{
+	font-family: 'Trebuchet MS' , 'Times New Roman';
+	color: #222222;
+	font-size: 12pt;
+	
+}
